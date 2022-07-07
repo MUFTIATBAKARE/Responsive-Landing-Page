@@ -1,91 +1,125 @@
-*{
-    box-sizing: border-box;
-    
+* {
+  box-sizing: border-box;
 }
-nav{
-    background-image: url(bg-hero-desktop.svg)
-    flex-wrap: nowr
+nav {
+  background-image: url(bg-hero-desktop.svg);
 }
 .column {
-    width: 50%;
-    height: 300px;
-    padding: 10px;
-    float: left;
-    background-color: white;
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+  float: left;
+  display: block;
+  background-image: url(bg-hero-desktop.svg);
 }
 @media screen and (max-width: 1000px) {
-    .column {
-      width: 50%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-   .text{
-    flex-direction: column-reverse;
-   }
-  }
-header{
-    float:left;
+  .column {
     width: 50%;
-    margin: 50px;
+  }
 }
-header button{
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-    border-color: white;
-    font-size: 10px;
-    padding: 10px;
-    position: absolute;
-    right: 50px;
+@media screen and (max-width: 600px) {
+   .column,
+  .center,
+  section,
+  .foot
+{
+    width: 100%;
+  }
 }
-div button{
-    background-color:hsl(322, 100%, 66%);
-    color: whitesmoke;
-    border-radius: 15px;
-    border-color: hsl(322, 100%, 66%)
-    ;
-    font-size: 10px;
-    padding: 15px;
+@media screen and (max-width: 600px) {
+    
+    header
+    {float: none;
+     width: 100%;
+     height: auto;
+   }
+ }
+@media screen and (max-width: 600px) {
+    .row{flex-direction: column;
+     width: 100%;
+   }
+ }
+header {
+  float: left;
+  display: block;
+  width: 50%;
+  margin: 50px;
+}
+header button {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  border-color: white;
+  font-size: 10px;
+  padding: 10px;
+  position: absolute;
+  right: 50px;
+}
+div button {
+  background-color: hsl(322, 100%, 66%);
+  color: whitesmoke;
+  border-radius: 15px;
+  border-color: hsl(322, 100%, 66%);
+  font-size: 10px;
+  padding: 15px;
 }
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 0;
-    padding: 5px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px;
+  padding: 1px;
 }
-.center{
-    background-color: white;
-    border-radius: 10px ;
-    text-align: center;
+.center {
+  background-color: white;
+  border: 30px solid white;
+  outline-style:outset;
+  outline-width: 10px;
+  outline-color: white;
+  text-align: center;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    color: hsl(208, 11%, 55%);
-    background-color: hsl(192, 100%, 9%);
+.row {
+display: flex;
+flex-wrap: wrap;
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  color: hsl(208, 11%, 55%);
 }
-p{
-    color: hsl(208, 11%, 55%);
-    font-size: 18px;
-    font-family: Open sans-serif;
-    padding: 0;
-    margin: 50px;
+.row,
+.foot {
+  background-color: hsl(192, 100%, 9%);
 }
-h3{
-    font-family: url(https://fonts.google.com/specimen/Poppins);
-    font-weight: 600;
+p {
+  color: hsl(208, 11%, 55%);
+  font-size: 18px;
+  font-family: Open sans-serif;
+  padding: 0;
+  margin: 50px;
 }
-a{
-    text-decoration: none;
-    color: hsl(208, 11%, 55%);
-    margin: 12px;
-    padding: 5px 0px 10px 20px;
+h3 {
+  font-family: url(https://fonts.google.com/specimen/Poppins);
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: hsl(208, 11%, 55%);
+  margin: 15px;
+  padding: 5px 0px 10px 20px;
+}
+.fa {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 2px;
+  font-size: 10px;
+  width: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.foot {
+  margin: 0px;
+  text-align: right;
+  width: 100%;
+}
 
-}
