@@ -118,8 +118,39 @@ a {
   margin: 5px 2px;
 }
 .foot {
-  margin: 0px;
-  text-align: right;
-  width: 100%;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0% {
+        background-color: white;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background-color: hsl(322, 100%, 66%);
+        left: 200px;
+        top: 0;
+    }
+    50% {
+        background-color: hsl(208, 11%, 55%);
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: white;
+        left: 0;
+        top: 200px;
+    }
+    100% {
+        background-color: hsl(192, 100%, 9%);
+        left: 0;
+        top: 0;
+    }
 }
 
